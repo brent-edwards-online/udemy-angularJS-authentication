@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" ng-app="authApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Auth0</title>
+
+    <link href="node_modules/angular-material/angular-material.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.auth0.com/js/auth0/8.8/auth0.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  </head>
+  <body ng-init="hello = 'hello world'">
+
+    <toolbar></toolbar>
+    <div layout-padding>
+      <ui-view></ui-view>
+    </div>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <script src="node_modules/angular-jwt/dist/angular-jwt.js"></script>
+    <script src="node_modules/angular-storage/dist/angular-storage.js"></script>
+    <script src="node_modules/auth0-angular/build/auth0-angular.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="app.js"></script>
+    <script src="components/toolbar/toolbar.ctr.js"></script>
+    <script src="components/profile/profile.ctr.js"></script>
+  </body>
+</html>
